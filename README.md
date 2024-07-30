@@ -16,7 +16,7 @@ The dataset comprises small pathology images with corresponding labels indicatin
 - `HCDNetwork.py`: Definition of the CNN model architecture.
 - `utils.py`: Utility functions for data processing and visualization.
 - `data/`: Directory containing the dataset. ([link](https://www.kaggle.com/competitions/histopathologic-cancer-detection/overview))
-- `output/`: Directory where model weights and results are saved.
+- `model/`: Directory where model weights and results are saved.
 
 ## [Model Architecture](notebooks/histopathologic_cancer.ipynb)
 The CNN model, `HCDNetwork`, is configurable with different numbers of convolutional layers and dropout rates. The architecture includes:
@@ -57,7 +57,7 @@ The `infer.py` script allows for performing inference on new images using the tr
 from infer import infer
 
 # Load the model and perform inference
-model_path = 'output/trained_hcd_model.pth'
+model_path = 'model/trained_hcd_model.pth'
 image_path = 'test/sample_image.tif'
 pred_label, pred_probs = infer(model, image_path, device='cuda')
 
