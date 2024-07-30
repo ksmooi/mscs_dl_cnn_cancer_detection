@@ -15,7 +15,7 @@ The dataset comprises small pathology images with corresponding labels indicatin
 - `infer.py`: Script to perform inference using the trained model.
 - `HCDNetwork.py`: Definition of the CNN model architecture.
 - `utils.py`: Utility functions for data processing and visualization.
-- `data/`: Directory containing the dataset.
+- `data/`: Directory containing the dataset. ([link](https://www.kaggle.com/competitions/histopathologic-cancer-detection/overview))
 - `output/`: Directory where model weights and results are saved.
 
 ## [Model Architecture](notebooks/histopathologic_cancer.ipynb)
