@@ -40,14 +40,16 @@ params_model = {
 The training process involves hyperparameter tuning, trying different architectures, and applying various techniques to improve performance. The model's performance is evaluated using the area under the ROC curve (AUC).
 
 ### Training Results
-| Model | Dropout Rate | Conv Layers | Training Loss | Training Accuracy | Validation Loss | Validation Accuracy |
-|-------|--------------|-------------|---------------|-------------------|-----------------|---------------------|
-| A     | 0.10         | 4           | 0.2453        | 0.9022            | 0.4719          | 0.7888              |
-| B     | 0.50         | 4           | 0.3539        | 0.8538            | 0.4424          | 0.8037              |
-| C     | 0.90         | 4           | 0.4535        | 0.8072            | 0.4922          | 0.7812              |
-| D     | 0.75         | 3           | 0.4226        | 0.8209            | 0.4533          | 0.8250              |
-| E     | 0.75         | 4           | 0.4340        | 0.8091            | 0.4873          | 0.7913              |
-| F     | 0.75         | 5           | 0.1433        | 0.9603            | 0.6798          | 0.7712              |
+
+| Model | Dropout Rate | Conv Layers | Training Loss | Training Accuracy | Training AUC | Validation Loss | Validation Accuracy | Validation AUC |
+|-------|--------------|-------------|---------------|-------------------|--------------|-----------------|---------------------|----------------|
+| A     | 0.10         | 4           | 0.2042        | 0.9300            | 0.9759       | 0.4512          | 0.8087              | 0.8842         |
+| B     | 0.50         | 4           | 0.2447        | 0.9097            | 0.9638       | 0.4784          | 0.8000              | 0.8736         |
+| C     | 0.90         | 4           | 0.4314        | 0.8034            | 0.8833       | 0.4483          | 0.8125              | 0.8780         |
+| D     | 0.75         | 3           | 0.3515        | 0.8478            | 0.9238       | 0.3888          | 0.8400              | 0.9003         |
+| E     | 0.75         | 4           | 0.3862        | 0.8356            | 0.9077       | 0.3794          | 0.8450              | 0.9064         |
+| F     | 0.75         | 5           | 0.0881        | 0.9794            | 0.9958       | 0.6120          | 0.8113              | 0.8746         |
+
 
 ## [Inference](notebooks/histopathologic_cancer.ipynb)
 The `infer.py` script allows for performing inference on new images using the trained model. The script loads the trained model, preprocesses the input image, and outputs the predicted label and class probabilities.
