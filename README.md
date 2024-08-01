@@ -3,6 +3,8 @@
 ## [Overview](notebooks/histopathologic_cancer.ipynb)
 This project focuses on identifying metastatic cancer in small image patches taken from larger digital pathology scans. The task involves creating a binary image classification model using convolutional neural networks (CNNs) to accurately classify whether a given image contains metastatic cancer cells or not. The dataset used is a slightly modified version of the PatchCamelyon (PCam) benchmark dataset, which is known for its clinical relevance and approachability.
 
+![](notebooks/img/histopathologic_cancer_scan.png)
+
 ## [Dataset](notebooks/histopathologic_cancer.ipynb)
 The dataset comprises small pathology images with corresponding labels indicating the presence of tumor tissue. The images are of size 96x96 pixels and are provided as part of the Kaggle competition.
 
